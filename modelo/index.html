@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD FastAPI</title>
+</head>
+<body>
+    <h1>Gestión de Carros y Usuarios</h1>
+
+    <h2>Agregar un nuevo carro</h2>
+    <form action="/carros" method="post">
+        <label for="carro_id">ID:</label>
+        <input type="text" id="carro_id" name="id" required><br>
+        <label for="carro_marca">Marca:</label>
+        <input type="text" id="carro_marca" name="marca" required><br>
+        <label for="carro_modelo">Modelo:</label>
+        <input type="number" id="carro_modelo" name="modelo" required><br>
+        <button type="submit">Agregar Carro</button>
+    </form>
+
+    <h2>Agregar un nuevo usuario</h2>
+    <form action="/usuarios" method="post">
+        <label for="usuario_id">ID:</label>
+        <input type="text" id="usuario_id" name="id" required><br>
+        <label for="usuario_nombre">Nombre:</label>
+        <input type="text" id="usuario_nombre" name="nombre" required><br>
+        <label for="usuario_edad">Edad:</label>
+        <input type="number" id="usuario_edad" name="edad" required><br>
+        <button type="submit">Agregar Usuario</button>
+    </form>
+</body>
+</html>
